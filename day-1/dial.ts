@@ -28,34 +28,10 @@ export function turnDial(direction: Direction, value: number, dial: number) {
 	});
 
 	if (direction === "L") {
-		if (dial - value < 0) {
-			newDial = dial - value + 100;
-		} else {
-			newDial = dial - value;
-		}
-
-		log({
-			fn: "turnDial",
-			printText: `Dial after: ${newDial}`,
-		});
-
-		return newDial;
+		newDial -= value;
+		return newDial < 0 ? newDial + 100 : newDial;
+	} else {
+		newDial += value;
+		return newDial > 99 ? newDial - 100 : newDial;
 	}
-
-	if (direction === "R") {
-		if (dial + value > 99) {
-			newDial = dial + value - 100;
-		} else {
-			newDial = dial + value;
-		}
-
-		log({
-			fn: "turnDial",
-			printText: `Dial after: ${newDial}`,
-		});
-
-		return newDial;
-	}
-
-	throw "What?";
 }
