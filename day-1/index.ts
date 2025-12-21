@@ -1,6 +1,6 @@
 import { getDialValue, getDirection, turnDial } from "./dial";
 import loadFile from "./loadFile";
-import log from "./log";
+import log from "../log";
 
 const result = await loadFile();
 

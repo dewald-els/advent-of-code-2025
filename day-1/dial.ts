@@ -1,4 +1,4 @@
-import log from "./log";
+import log from "../log";
 
 type Direction = "R" | "L";
 
