@@ -24,7 +24,7 @@ export function turnDial(direction: Direction, value: number, dial: number) {
 
 	log({
 		fn: "turnDial",
-		printText: `Dial before: ${dial}. Turn instruction: ${direction}${value}`,
+		text: `Dial before: ${dial}. Turn instruction: ${direction}${value}`,
 	});
 
 	if (direction === "L") {

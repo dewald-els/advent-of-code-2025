@@ -38,7 +38,7 @@ for (let i = 0; i < sequences.length; i++) {
 
 	log({
 		fn: "main",
-		printText: `Checking range: ${firstId} to ${lastId}`,
+		text: `Checking range: ${firstId} to ${lastId}`,
 	});
 
 	for (let i = +firstId; i <= +lastId; i++) {
@@ -63,7 +63,7 @@ for (let i = 0; i < sequences.length; i++) {
 			if (isEqual) {
 				log({
 					fn: "main",
-					printText: `Adding: ${i}`,
+					text: `Adding: ${i}`,
 				});
 				invalidIdTotal += i;
 				break;
@@ -74,7 +74,7 @@ for (let i = 0; i < sequences.length; i++) {
 
 log({
 	fn: "main",
-	printText: `Total of invalid id: ${invalidIdTotal}`,
+	text: `Total of invalid id: ${invalidIdTotal}`,
 });
 
 /* Ranges are sperated by "," in 1 single line

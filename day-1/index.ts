@@ -26,5 +26,5 @@ for (let i = 0; i < sequences.length; i++) {
 
 log({
 	fn: "main",
-	printText: `Times pointed to zero: ${timesDialPointedToZero}`,
+	text: `Times pointed to zero: ${timesDialPointedToZero}`,
 });

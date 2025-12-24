@@ -1,5 +1,5 @@
-function log({ fn, printText }: { fn: string; printText: string }) {
-	console.log(`[${fn}] ${printText}`);
+function log({ fn, text }: { fn: string; text: string }) {
+	console.log(`[${fn}] ${text}`);
 }
 
 export default log;
